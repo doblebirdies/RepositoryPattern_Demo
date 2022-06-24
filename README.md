@@ -15,7 +15,7 @@ Pero, todavía podemos ir un paso más allá y crear un repositorio específico 
 
 y después implementar en una nueva clase la interfaz que acabamos de crear para el nuevo método y que herede del repositorio genérico con nuestra entidad:
 
-      public class OrderRepository: Repositorio<Order>, IOrderRepository
+      public class OrderRepository: Repository<Order>, IOrderRepository
       { 
             IEnumerable<Order> MetodoEspecífico(tipo parametros){
                 .....
